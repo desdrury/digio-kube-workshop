@@ -1,0 +1,5 @@
+---
+controller:
+  scope:
+    enabled: true
+    namespace: metrics

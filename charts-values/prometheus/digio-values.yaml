@@ -1,0 +1,27 @@
+---
+rbac:
+  create: true
+
+alertmanager:
+  enabled: false
+
+pushgateway:
+  enabled: false
+
+nodeExporter:
+  enabled: false
+
+kubeStateMetrics:
+  enabled: false
+
+
+server:
+  ingress:
+    enabled: true
+    hosts:
+      - prometheus.metrics.do.citopro.com
+    annotations:
+      kubernetes.io/ingress.class: nginx
+  
+  persistentVolume:
+    enabled: true
