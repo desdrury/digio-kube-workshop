@@ -7,7 +7,8 @@
 ```console
 helm upgrade --install metrics-nginx-ingress \
   --namespace metrics \
-  -f charts-values/nginx-ingress/values.yaml \
+  --set controller.scope.enabled=true \
+  --set controller.scope.namespace=metrics \
   --version 0.22.1 \
   stable/nginx-ingress
 ```
@@ -17,7 +18,7 @@ helm upgrade --install metrics-nginx-ingress \
 ```console
 helm upgrade --install jenkins-nginx-ingress \
   --namespace jenkins \
-  -f charts-values/nginx-ingress/values.yaml \
+  --set controller.scope.enabled=true \
   --set controller.scope.namespace=jenkins \
   --version 0.22.1 \
   stable/nginx-ingress
@@ -56,7 +57,6 @@ kubectl -n ingress create -f workloads/cert-manager/cluster-issuer.yaml
 ```
 
 
-
 ## Prometheus
 
 **Cluster wide (Metrics)**
@@ -71,10 +71,10 @@ helm upgrade --install metrics-prometheus \
 
 **Workshop participant**
 
-Notes 
+**Notes**
 
 * Replace `<name>` with the participants names.
-* The `values.yaml` must have a correct value for `hosts`.
+* The `digio-values.yaml` must have a correct value for `hosts`.
 
 ```console
 helm upgrade --install <name>-prometheus \
@@ -99,7 +99,7 @@ helm upgrade --install metrics-grafana \
 
 **Workshop participant**
 
-Notes 
+**Notes**
 
 * Replace `<name>` with the participants names.
 * The `values.yaml` must have a correct value for `hosts`.
@@ -127,7 +127,7 @@ helm upgrade --install jenkins-jenkins \
 
 **Workshop participant**
 
-Notes 
+**Notes**
 
 * Replace `<name>` with the participants names.
 * The `values.yaml` must have a correct value for `HostName`.
@@ -139,7 +139,6 @@ helm upgrade --install <name>-jenkins \
   --version 0.16.18 \
   stable/jenkins
 ```
-
 
 
 ## DinD
@@ -154,7 +153,7 @@ helm upgrade --install dind \
 
 **Workshop participant**
 
-Notes 
+**Notes**
 
 * Replace `<name>` with the participants names.
 

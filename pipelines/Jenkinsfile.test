@@ -1,0 +1,35 @@
+def label = "mypod-${UUID.randomUUID().toString()}"
+podTemplate(label: label, 
+  serviceAccount: 'jenkins-jenkins',
+  containers: [
+    containerTemplate(
+      name: 'docker', 
+      image: 'docker:17.12.1-ce',
+      ttyEnabled: true, 
+      command: 'cat',
+      envVars: [
+        envVar(key: 'DOCKER_HOST', value: 'tcp://dind:2375')
+      ]
+    ),
+    containerTemplate(
+      name: 'helm', 
+      image: 'lachlanevenson/k8s-helm:v2.8.1', 
+      ttyEnabled: true, 
+      command: 'cat'
+    )
+  ],
+  volumes: [
+    emptyDirVolume(mountPath: '/var/lib/docker', memory: false)
+  ]) {
+
+    node(label) {
+      
+      // Checkout code    
+      container('jnlp') {
+        stage('Test') {
+          sh 'hostname'
+        }
+      }
+
+    }
+}
