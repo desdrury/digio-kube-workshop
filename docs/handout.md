@@ -6,6 +6,8 @@ This document has useful information and links for the workshop.
 
 ---
 
+https://github.com/desdrury/digio-kube-workshop
+
 
 http://kube7days.staging.do.citopro.com
 

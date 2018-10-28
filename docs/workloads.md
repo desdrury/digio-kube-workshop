@@ -10,10 +10,9 @@ This document describes how a workshop attendee can deploy workloads to the clus
 
 [Chart](https://github.com/helm/charts/tree/master/stable/nginx-ingress)
 
-Notes 
+**Notes**
 
 * Replace `<name>` with your name.
-* The `values.yaml` must have a correct value for `namespace`.
 
 ```console
 helm upgrade --install <name>-nginx-ingress \
