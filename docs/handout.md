@@ -6,31 +6,32 @@ This document has useful information and links for the workshop.
 
 ---
 
-https://github.com/desdrury/digio-kube-workshop
+**Labs**
+
+Prerequisites. [Links](prereqs.md)
+
+How to build and test a simple application. [Link](first-app.md)
+
+How to deploy the workloads. [Link](workloads.md)
+
+How to author a Helm Chart. [Link](helm-lab.md)
+
+Installing Grafana dashboards. [Link](https://kube7days.staging.do.citopro.com/04-monitoring-and-health-checks/04-05.html)
+
+Add a Jenkins credential. [Link](https://kube7days.staging.do.citopro.com/07-ci-cd-solutions/07-03.html)
+
+Create a Jenkins Pipeline. [Link](https://kube7days.staging.do.citopro.com/07-ci-cd-solutions/07-05.html)
 
 
-http://kube7days.staging.do.citopro.com
+**Kubernetes in 7 Days**
 
-How to deploy the [workloads](workloads.md).
+Kubernetes in 7 Days documentation. [Link](http://kube7days.staging.do.citopro.com)
 
-
-Stable Repo
-https://github.com/helm/charts/tree/master/stable
-
-Incubator
-https://github.com/helm/charts/tree/master/incubator
+Repo to fork. [Link](https://github.com/desdrury/kubernetes-in-7-days-video)
 
 
+**Helm**
 
+Helm Stable Repo. [Link](https://github.com/helm/charts/tree/master/stable)
 
-Prometheus
-https://kube7days.staging.do.citopro.com/04-monitoring-and-health-checks/04-03.html
-
-Grafana
-
-https://kube7days.staging.do.citopro.com/04-monitoring-and-health-checks/04-04.html
-https://kube7days.staging.do.citopro.com/04-monitoring-and-health-checks/04-05.html
-
-
-Jenkins
-https://kube7days.staging.do.citopro.com/07-ci-cd-solutions/07-03.html
+Helm Incubator Repo. [Link](https://github.com/helm/charts/tree/master/incubator)
