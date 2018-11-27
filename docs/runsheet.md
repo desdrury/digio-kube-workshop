@@ -53,7 +53,7 @@ helm upgrade --install cert-manager \
   --version v0.4.1 \
   stable/cert-manager
 
-kubectl -n ingress create -f workloads/cert-manager/cluster-issuer.yaml
+kubectl -n ingress create -f charts-values/cert-manager/cluster-issuer.yaml
 ```
 
 

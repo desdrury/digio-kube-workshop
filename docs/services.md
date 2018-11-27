@@ -11,17 +11,17 @@ This document describes how to explore Services.
 kubectl get svc --all-namespaces
 
 # Show cluster IPs of Services in the Jobs NameSpace
-kubectl -n jobs get svc
+kubectl -n jenkins get svc
 
 # Show selectors, EndPoints and ports
-kubectl -n jobs describe svc jenkins
-kubectl -n jobs get ep jenkins
+kubectl -n jenkins describe svc jenkins
+kubectl -n jenkins get ep jenkins
 
 # Show Pod IP 
-kubectl -n jobs get pod -l app=jenkins -o wide
+kubectl -n jenkins get pod -l app=jenkins -o wide
 
 # Show Pod labels and ports
-kubectl -n jobs describe pod $(kubectl -n jobs get pod -l app=jenkins -o=jsonpath="{.items[0].metadata.name}")
+kubectl -n jenkins describe pod $(kubectl -n jenkins get pod -l app=jenkins -o=jsonpath="{.items[0].metadata.name}")
 
 # Test DNS entry and see how it maps to the Service ClusterIP
 kubectl run curl -it --rm --restart=Never --image appropriate/curl -- sh
