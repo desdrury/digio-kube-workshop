@@ -1,6 +1,6 @@
 def label = "mypod-${UUID.randomUUID().toString()}"
 podTemplate(label: label, 
-  serviceAccount: 'jenkins',
+  serviceAccount: 'jenkins-jenkins',
   containers: [
     containerTemplate(
       name: 'docker', 
