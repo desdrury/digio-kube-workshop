@@ -33,9 +33,7 @@ Services, selectors and DNS. [Link](services.md)
 
 ### Kubernetes Overview - Part 2
 
-**TODO** Kubeconfig and NameSpace creation. [Link](kubeconfig.md)
-
-**TODO** Explore API objects. [Link](api.md)
+Explore API objects. [Link](api.md)
 
 
 ### Ingress Controller
@@ -53,10 +51,18 @@ How to author a Helm Chart. [Link](helm-lab.md)
 
 ### Monitoring
 
+How to deploy the workloads - Prometheus. [Link](workloads.md#prometheus)
+
+How to deploy the workloads - Grafana. [Link](workloads.md#grafana)
+
 Installing Grafana dashboards. [Link](https://kube7days.staging.do.citopro.com/04-monitoring-and-health-checks/04-05.html)
 
 
 ### CI/CD
+
+How to deploy the workloads - Jenkins. [Link](workloads.md#jenkins)
+
+How to deploy the workloads - DinD. [Link](workloads.md#dind)
 
 Add a Jenkins credential. [Link](https://kube7days.staging.do.citopro.com/07-ci-cd-solutions/07-03.html)
 

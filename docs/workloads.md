@@ -111,7 +111,7 @@ printf $(kubectl get secret --namespace <name> <name>-jenkins -o jsonpath="{.dat
 * Replace `<name>` with your name.
 
 ```console
-helm upgrade --install dind \
+helm upgrade --install <name>-dind \
   --namespace <name> \
   charts/dind/
 ```
