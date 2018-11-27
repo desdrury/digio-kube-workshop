@@ -45,9 +45,13 @@ How to deploy the workloads - Nginx Ingress Controller. [Link](workloads.md#ngin
 
 How to author a Helm Chart. [Link](helm-lab.md)
 
+
 ### Blue / Green
 
-**TODO**
+Ian Lewis article. [Link](https://www.ianlewis.org/en/bluegreen-deployments-kubernetes)
+
+Github repo for article. [Link](https://github.com/IanLewis/kubernetes-bluegreen-deployment-tutorial)
+
 
 ### Monitoring
 
@@ -80,7 +84,16 @@ Create a Jenkins Pipeline. [Link](https://kube7days.staging.do.citopro.com/07-ci
 
 Kubernetes in 7 Days documentation. [Link](http://kube7days.staging.do.citopro.com)
 
-Repo to fork. [Link](https://github.com/desdrury/kubernetes-in-7-days-video)
+---
+
+
+## Socks Shop
+
+Announcement blog. [Link](https://www.weave.works/blog/sock-shop-microservices-demo-application/)
+
+Website. [Link](https://microservices-demo.github.io)
+
+Github repo. [Link](https://github.com/microservices-demo/microservices-demo)
 
 ---
 

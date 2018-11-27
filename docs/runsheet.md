@@ -24,6 +24,17 @@ helm upgrade --install jenkins-nginx-ingress \
   stable/nginx-ingress
 ```
 
+**Socks Shop**
+
+```console
+helm upgrade --install sock-shop-nginx-ingress \
+  --namespace sock-shop \
+  --set controller.scope.enabled=true \
+  --set controller.scope.namespace=sock-shop \
+  --version 0.22.1 \
+  stable/nginx-ingress
+```
+
 
 **Workshop participant**
 
