@@ -72,11 +72,6 @@ Add a Jenkins credential. [Link](https://kube7days.staging.do.citopro.com/07-ci-
 
 Create a Jenkins Pipeline. [Link](https://kube7days.staging.do.citopro.com/07-ci-cd-solutions/07-05.html)
 
-
-### Socks Shop
-
-**TODO**
-
 ---
 
 
